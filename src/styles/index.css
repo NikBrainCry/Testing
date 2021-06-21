@@ -1,0 +1,279 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Recursive', sans-serif;
+  background-color: azure;
+  }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.makeClick {
+  cursor:pointer;
+  user-select:none;
+}
+.makeClick:hover {
+  background-color: aquamarine;
+}
+
+li {
+  list-style:none;
+}
+ .list  {
+  width:100%;
+  display:flex;
+  flex-flow: row,nowrap;
+  justify-content:flex-start;
+  align-items: center;
+  
+} 
+.list li div {
+  display: inline-block;
+  margin:4px 0;
+}
+
+.mainList {
+  display: block;
+width:1159px;
+margin: 20px auto;
+font-size: 14pt;
+border:1px solid rgb(189, 188, 188);
+padding:20px;
+background-color: rgb(228, 228, 228);
+}
+.numberList {
+  display: inline-block;
+  width:100px;
+  height: 100px;
+  background-color: aqua;
+  border:1px solid black;
+  font-size: 24pt;
+}
+.numberList:nth-child(2n) {
+  background-color: bisque;
+}
+.numberList:nth-child(2n+1) {
+  background-color: red;
+}
+.primeNumberList {
+  display: inline-block;
+  width:100px;
+  height: 100px;
+  border:1px solid black;
+  font-size: 24pt;
+  background-color: yellow
+}
+
+.numberList div {
+  margin:50px auto;
+  top:50%;
+  left:50%
+}
+.numberLists {
+  display:flex;
+  flex-flow:column nowrap;
+  justify-content:first baseline;
+  width:800px;
+  margin: 0 auto;
+}
+.dark {
+  background-color: olive;
+}
+.epileptic {
+ animation: epilepsia 1s ease;
+}
+.cats {
+  text-align: center;
+}
+.cats-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width:60%;
+  margin: auto;
+  border:1px solid black;
+  text-align:left;
+  font-size: 14pt;
+  margin-bottom: 20px;
+
+}
+.cats-image img {
+  max-width: 100%;
+  min-width: 100%;
+  height:100%;
+ transition:transform 1s ease;
+
+}
+.cats-image {
+  overflow: hidden;
+    
+}
+.cats-image img:hover {
+  transform: scale(1.4) ;
+
+ 
+}
+.cats-description {
+  margin: 20px;
+
+}
+.country-list {
+  border:1px solid black;
+margin:10px;
+font-size: 16pt;
+padding:5px;
+cursor:pointer
+}
+.country-cat-container {
+  display:flex;
+  flex-flow:wrap;
+  width:70%;
+  margin:20px auto;
+}
+.footer-container {
+  display:flex;
+  flex-flow:column;
+  justify-content: center;
+  text-align: center;
+  width:100%;
+  height:400px;
+  border: 1px solid darkgray;
+}
+.footer-container div {
+  width:100px;
+  align-self:flex-end;
+  cursor:pointer;
+}
+
+.i-nav {
+  background-color: rgb(189, 188, 188);
+  border-radius: 50%;
+  font-size: 48pt;
+}
+.country-container {
+  display: flex;
+  flex-flow:column;
+  width:20%;
+  border:1px solid grey;
+  background-color: rgb(189, 188, 188);
+  padding:20px;
+  margin:10px;
+  align-items: baseline;
+  align-content: flex-start;
+  
+}
+.country-container div {
+  margin-bottom:10px;
+}
+.render-country {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.country-flag  img {
+  max-width: 100%;
+  min-width: 100%;
+  height:100%;
+}
+.country-flag {
+  width:240px;
+  height:144px;
+align-self: center;
+}
+.country-name {
+  align-self: center;
+  text-align: center;
+}
+.search-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width:100%;
+  height:200px;
+  background-color: rgb(189, 188, 188);
+
+  padding-top: 60px;
+  
+  margin: 20px 0;
+justify-content: space-between;
+
+  border: 1px solid darkgray;
+}
+.search-container input {
+  width:60%;
+  height: 4rem;
+  border-radius: 3rem;
+  font-size: 2rem;
+  text-indent: 1rem;
+}
+.search-container:nth-child(2) {
+  font-size: 3rem;
+  margin-top: 10px;
+  cursor:pointer
+}
+.twit-container {
+  display:flex;
+  flex-flow: column;
+  width:50%;
+  align-items: center;
+  margin:0 auto;
+  font-size: 1.5rem;
+  align-items: stretch;
+}
+.singleTwit-container {
+  padding:0 10px;
+  border:1px solid grey;
+  margin-bottom: 3px;
+  overflow: auto;
+  white-space: pre;
+  word-break: break-all;
+
+}
+
+.singleTwit-container:hover {
+    transform:scaleY(1.018)
+}
+.foot-twit {
+  font-size:2rem;
+  display:flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.foot-twit:nth-child(0) {
+  width:30%;
+}
+.foot-twit:nth-child(1) {
+  width:40%
+}
+.foot-twit:nth-child(2) {
+  width:30%
+}
+.react-icons {
+  cursor:pointer
+}
+.react-icons:hover {
+  color:blue
+}
+.makeTwit-container {
+  margin: 30px 0 50px 30px;
+
+}
+.makeTwit-container input {
+  height: 8rem;
+  width: 70%;
+  margin-right: 40px;
+  word-break: break-all;
+
+}
+textarea {
+  resize: none;
+  outline: none;
+}
